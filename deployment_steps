@@ -7,3 +7,11 @@
     7  apt install docker.io -y
     8  sudo usermod -aG docker jenkins
     9  sudo systemctl restart jenkins
+   10  history
+   11  cat /var/lib/jenkins/secrets/initialAdminPassword
+   12  curl -fsSL https://ollama.com/install.sh | sh
+   13  sudo systemctl enable ollama
+   14  sudo systemctl start ollama
+   15  ollama pull qwen2.5-coder:3b
+   16  ollama run qwen2.5-coder:3b
+   17  curl http://localhost:11434/api/tags
